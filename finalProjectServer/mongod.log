@@ -1,0 +1,466 @@
+2021-05-02T16:45:49.292-0500 I CONTROL  [initandlisten] MongoDB starting : pid=50983 port=12006 dbpath=./dbfile 64-bit host=ukko
+2021-05-02T16:45:49.292-0500 I CONTROL  [initandlisten] db version v3.6.9
+2021-05-02T16:45:49.292-0500 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2021-05-02T16:45:49.292-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2021-05-02T16:45:49.292-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-05-02T16:45:49.292-0500 I CONTROL  [initandlisten] modules: none
+2021-05-02T16:45:49.292-0500 I CONTROL  [initandlisten] build environment:
+2021-05-02T16:45:49.292-0500 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2021-05-02T16:45:49.292-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2021-05-02T16:45:49.292-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-05-02T16:45:49.292-0500 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 12006 }, storage: { dbPath: "./dbfile" }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2021-05-02T16:45:49.294-0500 E NETWORK  [initandlisten] Failed to unlink socket file /tmp/mongodb-12006.sock Operation not permitted
+2021-05-02T16:45:49.294-0500 F -        [initandlisten] Fatal Assertion 40486 at src/mongo/transport/transport_layer_asio.cpp 171
+2021-05-02T16:45:49.294-0500 F -        [initandlisten] 
+
+***aborting after fassert() failure
+
+
+2021-05-02T16:47:09.908-0500 I CONTROL  [main] ***** SERVER RESTARTED *****
+2021-05-02T16:47:09.916-0500 I CONTROL  [initandlisten] MongoDB starting : pid=51012 port=12007 dbpath=./dbfile 64-bit host=ukko
+2021-05-02T16:47:09.916-0500 I CONTROL  [initandlisten] db version v3.6.9
+2021-05-02T16:47:09.916-0500 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2021-05-02T16:47:09.916-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2021-05-02T16:47:09.916-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-05-02T16:47:09.916-0500 I CONTROL  [initandlisten] modules: none
+2021-05-02T16:47:09.917-0500 I CONTROL  [initandlisten] build environment:
+2021-05-02T16:47:09.917-0500 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2021-05-02T16:47:09.917-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2021-05-02T16:47:09.917-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-05-02T16:47:09.917-0500 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 12007 }, storage: { dbPath: "./dbfile" }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2021-05-02T16:47:09.919-0500 I -        [initandlisten] Detected data files in ./dbfile created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2021-05-02T16:47:09.920-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=257440M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2021-05-02T16:47:11.329-0500 I STORAGE  [initandlisten] WiredTiger message [1619992031:329865][51012:0x7ff617f76200], txn-recover: Main recovery loop: starting at 6/4992
+2021-05-02T16:47:11.487-0500 I STORAGE  [initandlisten] WiredTiger message [1619992031:487297][51012:0x7ff617f76200], txn-recover: Recovering log 6 through 7
+2021-05-02T16:47:11.612-0500 I STORAGE  [initandlisten] WiredTiger message [1619992031:612669][51012:0x7ff617f76200], txn-recover: Recovering log 7 through 7
+2021-05-02T16:47:11.678-0500 I STORAGE  [initandlisten] WiredTiger message [1619992031:678533][51012:0x7ff617f76200], txn-recover: Set global recovery timestamp: 0
+2021-05-02T16:47:11.721-0500 I CONTROL  [initandlisten] 
+2021-05-02T16:47:11.721-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2021-05-02T16:47:11.721-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2021-05-02T16:47:11.721-0500 I CONTROL  [initandlisten] 
+2021-05-02T16:47:11.723-0500 I CONTROL  [initandlisten] 
+2021-05-02T16:47:11.723-0500 I CONTROL  [initandlisten] ** WARNING: You are running on a NUMA machine.
+2021-05-02T16:47:11.723-0500 I CONTROL  [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2021-05-02T16:47:11.723-0500 I CONTROL  [initandlisten] **              numactl --interleave=all mongod [other options]
+2021-05-02T16:47:11.723-0500 I CONTROL  [initandlisten] 
+2021-05-02T16:47:11.738-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './dbfile/diagnostic.data'
+2021-05-02T16:47:11.739-0500 I NETWORK  [initandlisten] waiting for connections on port 12007
+2021-05-02T16:47:16.305-0500 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt), will terminate after current cmd ends
+2021-05-02T16:47:16.305-0500 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2021-05-02T16:47:16.305-0500 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-12007.sock
+2021-05-02T16:47:16.305-0500 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2021-05-02T16:47:16.311-0500 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2021-05-02T16:47:16.433-0500 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2021-05-02T16:47:16.434-0500 I CONTROL  [signalProcessingThread] now exiting
+2021-05-02T16:47:16.434-0500 I CONTROL  [signalProcessingThread] shutting down with code:0
+2021-05-02T16:47:30.063-0500 I CONTROL  [main] ***** SERVER RESTARTED *****
+2021-05-02T16:47:30.072-0500 I CONTROL  [initandlisten] MongoDB starting : pid=51048 port=12007 dbpath=./dbfile 64-bit host=ukko
+2021-05-02T16:47:30.072-0500 I CONTROL  [initandlisten] db version v3.6.9
+2021-05-02T16:47:30.072-0500 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2021-05-02T16:47:30.072-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2021-05-02T16:47:30.072-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-05-02T16:47:30.072-0500 I CONTROL  [initandlisten] modules: none
+2021-05-02T16:47:30.072-0500 I CONTROL  [initandlisten] build environment:
+2021-05-02T16:47:30.072-0500 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2021-05-02T16:47:30.072-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2021-05-02T16:47:30.072-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-05-02T16:47:30.072-0500 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 12007 }, storage: { dbPath: "./dbfile" }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2021-05-02T16:47:30.074-0500 I -        [initandlisten] Detected data files in ./dbfile created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2021-05-02T16:47:30.075-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=257440M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2021-05-02T16:47:31.589-0500 I STORAGE  [initandlisten] WiredTiger message [1619992051:589851][51048:0x7f12a8d10200], txn-recover: Main recovery loop: starting at 7/4992
+2021-05-02T16:47:31.722-0500 I STORAGE  [initandlisten] WiredTiger message [1619992051:722498][51048:0x7f12a8d10200], txn-recover: Recovering log 7 through 8
+2021-05-02T16:47:31.817-0500 I STORAGE  [initandlisten] WiredTiger message [1619992051:817020][51048:0x7f12a8d10200], txn-recover: Recovering log 8 through 8
+2021-05-02T16:47:31.871-0500 I STORAGE  [initandlisten] WiredTiger message [1619992051:871343][51048:0x7f12a8d10200], txn-recover: Set global recovery timestamp: 0
+2021-05-02T16:47:31.909-0500 I CONTROL  [initandlisten] 
+2021-05-02T16:47:31.909-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2021-05-02T16:47:31.909-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2021-05-02T16:47:31.909-0500 I CONTROL  [initandlisten] 
+2021-05-02T16:47:31.910-0500 I CONTROL  [initandlisten] 
+2021-05-02T16:47:31.911-0500 I CONTROL  [initandlisten] ** WARNING: You are running on a NUMA machine.
+2021-05-02T16:47:31.911-0500 I CONTROL  [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2021-05-02T16:47:31.911-0500 I CONTROL  [initandlisten] **              numactl --interleave=all mongod [other options]
+2021-05-02T16:47:31.911-0500 I CONTROL  [initandlisten] 
+2021-05-02T16:47:31.924-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './dbfile/diagnostic.data'
+2021-05-02T16:47:31.924-0500 I NETWORK  [initandlisten] waiting for connections on port 12007
+2021-05-02T16:47:55.164-0500 I NETWORK  [listener] connection accepted from 131.212.41.69:49270 #1 (1 connection now open)
+2021-05-02T16:47:55.169-0500 I NETWORK  [conn1] received client metadata from 131.212.41.69:49270 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-128-generic" }, platform: "Node.js v8.10.0, LE, mongodb-core: 2.1.20" }
+2021-05-02T16:47:55.438-0500 I COMMAND  [conn1] command finalProject.names command: getMore { getMore: 21331733494, collection: "names", batchSize: 1000, $readPreference: { mode: "secondaryPreferred" }, $db: "finalProject" } originatingCommand: { find: "names", filter: { year: 1909 }, $db: "finalProject" } planSummary: COLLSCAN cursorid:21331733494 keysExamined:0 docsExamined:99899 cursorExhausted:1 numYields:780 nreturned:899 reslen:76274 locks:{ Global: { acquireCount: { r: 1562 } }, Database: { acquireCount: { r: 781 } }, Collection: { acquireCount: { r: 781 } } } protocol:op_query 101ms
+2021-05-02T16:47:59.831-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Jakayla" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:10 reslen:946 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 112ms
+2021-05-02T16:48:03.447-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { year: 2007 }, $db: "finalProject" } planSummary: COLLSCAN cursorid:19314105679 keysExamined:0 docsExamined:127101 numYields:992 nreturned:101 reslen:8453 locks:{ Global: { acquireCount: { r: 1986 } }, Database: { acquireCount: { r: 993 } }, Collection: { acquireCount: { r: 993 } } } protocol:op_query 102ms
+2021-05-02T16:48:07.510-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Stephanie" }, $db: "finalProject" } planSummary: COLLSCAN cursorid:20923270254 keysExamined:0 docsExamined:236999 numYields:1851 nreturned:101 reslen:8875 locks:{ Global: { acquireCount: { r: 3704 } }, Database: { acquireCount: { r: 1852 } }, Collection: { acquireCount: { r: 1852 } } } protocol:op_query 184ms
+2021-05-02T16:48:11.988-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Freddy" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:84 reslen:7068 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 179ms
+2021-05-02T16:48:13.210-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Julianne" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:79 reslen:6890 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 112ms
+2021-05-02T16:48:14.339-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Marcelle" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:28 reslen:2504 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 110ms
+2021-05-02T16:48:15.589-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Casey" }, $db: "finalProject" } planSummary: COLLSCAN cursorid:18284510861 keysExamined:0 docsExamined:231119 numYields:1805 nreturned:101 reslen:8395 locks:{ Global: { acquireCount: { r: 3612 } }, Database: { acquireCount: { r: 1806 } }, Collection: { acquireCount: { r: 1806 } } } protocol:op_query 104ms
+2021-05-02T16:48:16.794-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Rochelle" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:68 reslen:5944 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 111ms
+2021-05-02T16:48:20.182-0500 I NETWORK  [listener] connection accepted from 131.212.41.69:49272 #2 (2 connections now open)
+2021-05-02T16:48:50.379-0500 I NETWORK  [conn1] end connection 131.212.41.69:49270 (0 connections now open)
+2021-05-02T16:48:50.379-0500 I NETWORK  [conn2] end connection 131.212.41.69:49272 (1 connection now open)
+2021-05-02T16:48:54.545-0500 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt), will terminate after current cmd ends
+2021-05-02T16:48:54.545-0500 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2021-05-02T16:48:54.545-0500 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-12007.sock
+2021-05-02T16:48:54.545-0500 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2021-05-02T16:48:54.555-0500 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2021-05-02T16:48:54.711-0500 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2021-05-02T16:48:54.713-0500 I CONTROL  [signalProcessingThread] now exiting
+2021-05-02T16:48:54.713-0500 I CONTROL  [signalProcessingThread] shutting down with code:0
+2021-05-02T16:56:15.273-0500 I CONTROL  [main] ***** SERVER RESTARTED *****
+2021-05-02T16:56:15.278-0500 I CONTROL  [initandlisten] MongoDB starting : pid=51480 port=12007 dbpath=./dbfile 64-bit host=ukko
+2021-05-02T16:56:15.278-0500 I CONTROL  [initandlisten] db version v3.6.9
+2021-05-02T16:56:15.278-0500 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2021-05-02T16:56:15.278-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2021-05-02T16:56:15.278-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-05-02T16:56:15.278-0500 I CONTROL  [initandlisten] modules: none
+2021-05-02T16:56:15.279-0500 I CONTROL  [initandlisten] build environment:
+2021-05-02T16:56:15.279-0500 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2021-05-02T16:56:15.279-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2021-05-02T16:56:15.279-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-05-02T16:56:15.279-0500 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 12007 }, storage: { dbPath: "./dbfile" }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2021-05-02T16:56:15.280-0500 E NETWORK  [initandlisten] Failed to unlink socket file /tmp/mongodb-12007.sock Operation not permitted
+2021-05-02T16:56:15.280-0500 F -        [initandlisten] Fatal Assertion 40486 at src/mongo/transport/transport_layer_asio.cpp 171
+2021-05-02T16:56:15.280-0500 F -        [initandlisten] 
+
+***aborting after fassert() failure
+
+
+2021-05-02T16:56:46.108-0500 I CONTROL  [main] ***** SERVER RESTARTED *****
+2021-05-02T16:56:46.115-0500 I CONTROL  [initandlisten] MongoDB starting : pid=51489 port=12008 dbpath=./dbfile 64-bit host=ukko
+2021-05-02T16:56:46.115-0500 I CONTROL  [initandlisten] db version v3.6.9
+2021-05-02T16:56:46.115-0500 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2021-05-02T16:56:46.115-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2021-05-02T16:56:46.115-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-05-02T16:56:46.115-0500 I CONTROL  [initandlisten] modules: none
+2021-05-02T16:56:46.115-0500 I CONTROL  [initandlisten] build environment:
+2021-05-02T16:56:46.115-0500 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2021-05-02T16:56:46.115-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2021-05-02T16:56:46.115-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-05-02T16:56:46.115-0500 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 12008 }, storage: { dbPath: "./dbfile" }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2021-05-02T16:56:46.117-0500 I -        [initandlisten] Detected data files in ./dbfile created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2021-05-02T16:56:46.118-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=257440M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2021-05-02T16:56:47.736-0500 I STORAGE  [initandlisten] WiredTiger message [1619992607:736926][51489:0x7f22e00c6200], txn-recover: Main recovery loop: starting at 8/6784
+2021-05-02T16:56:47.883-0500 I STORAGE  [initandlisten] WiredTiger message [1619992607:882986][51489:0x7f22e00c6200], txn-recover: Recovering log 8 through 9
+2021-05-02T16:56:47.991-0500 I STORAGE  [initandlisten] WiredTiger message [1619992607:991197][51489:0x7f22e00c6200], txn-recover: Recovering log 9 through 9
+2021-05-02T16:56:48.069-0500 I STORAGE  [initandlisten] WiredTiger message [1619992608:69012][51489:0x7f22e00c6200], txn-recover: Set global recovery timestamp: 0
+2021-05-02T16:56:48.113-0500 I CONTROL  [initandlisten] 
+2021-05-02T16:56:48.113-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2021-05-02T16:56:48.113-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2021-05-02T16:56:48.113-0500 I CONTROL  [initandlisten] 
+2021-05-02T16:56:48.114-0500 I CONTROL  [initandlisten] 
+2021-05-02T16:56:48.114-0500 I CONTROL  [initandlisten] ** WARNING: You are running on a NUMA machine.
+2021-05-02T16:56:48.114-0500 I CONTROL  [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2021-05-02T16:56:48.114-0500 I CONTROL  [initandlisten] **              numactl --interleave=all mongod [other options]
+2021-05-02T16:56:48.114-0500 I CONTROL  [initandlisten] 
+2021-05-02T16:56:48.131-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './dbfile/diagnostic.data'
+2021-05-02T16:56:48.132-0500 I NETWORK  [initandlisten] waiting for connections on port 12008
+2021-05-02T16:56:52.837-0500 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt), will terminate after current cmd ends
+2021-05-02T16:56:52.837-0500 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2021-05-02T16:56:52.837-0500 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-12008.sock
+2021-05-02T16:56:52.838-0500 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2021-05-02T16:56:52.844-0500 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2021-05-02T16:56:52.933-0500 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2021-05-02T16:56:52.934-0500 I CONTROL  [signalProcessingThread] now exiting
+2021-05-02T16:56:52.934-0500 I CONTROL  [signalProcessingThread] shutting down with code:0
+2021-05-02T16:58:45.904-0500 I CONTROL  [main] ***** SERVER RESTARTED *****
+2021-05-02T16:58:45.914-0500 I CONTROL  [initandlisten] MongoDB starting : pid=51541 port=12008 dbpath=./dbfile 64-bit host=ukko
+2021-05-02T16:58:45.914-0500 I CONTROL  [initandlisten] db version v3.6.9
+2021-05-02T16:58:45.914-0500 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2021-05-02T16:58:45.914-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2021-05-02T16:58:45.914-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-05-02T16:58:45.914-0500 I CONTROL  [initandlisten] modules: none
+2021-05-02T16:58:45.914-0500 I CONTROL  [initandlisten] build environment:
+2021-05-02T16:58:45.914-0500 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2021-05-02T16:58:45.914-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2021-05-02T16:58:45.914-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-05-02T16:58:45.914-0500 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 12008 }, storage: { dbPath: "./dbfile" }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2021-05-02T16:58:45.916-0500 I -        [initandlisten] Detected data files in ./dbfile created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2021-05-02T16:58:45.917-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=257440M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2021-05-02T16:58:47.287-0500 I STORAGE  [initandlisten] WiredTiger message [1619992727:287938][51541:0x7ff243386200], txn-recover: Main recovery loop: starting at 9/4992
+2021-05-02T16:58:47.448-0500 I STORAGE  [initandlisten] WiredTiger message [1619992727:448436][51541:0x7ff243386200], txn-recover: Recovering log 9 through 10
+2021-05-02T16:58:47.571-0500 I STORAGE  [initandlisten] WiredTiger message [1619992727:571905][51541:0x7ff243386200], txn-recover: Recovering log 10 through 10
+2021-05-02T16:58:47.639-0500 I STORAGE  [initandlisten] WiredTiger message [1619992727:639032][51541:0x7ff243386200], txn-recover: Set global recovery timestamp: 0
+2021-05-02T16:58:47.683-0500 I CONTROL  [initandlisten] 
+2021-05-02T16:58:47.683-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2021-05-02T16:58:47.683-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2021-05-02T16:58:47.683-0500 I CONTROL  [initandlisten] 
+2021-05-02T16:58:47.684-0500 I CONTROL  [initandlisten] 
+2021-05-02T16:58:47.684-0500 I CONTROL  [initandlisten] ** WARNING: You are running on a NUMA machine.
+2021-05-02T16:58:47.684-0500 I CONTROL  [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2021-05-02T16:58:47.684-0500 I CONTROL  [initandlisten] **              numactl --interleave=all mongod [other options]
+2021-05-02T16:58:47.684-0500 I CONTROL  [initandlisten] 
+2021-05-02T16:58:47.700-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './dbfile/diagnostic.data'
+2021-05-02T16:58:47.701-0500 I NETWORK  [initandlisten] waiting for connections on port 12008
+2021-05-02T16:58:49.200-0500 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt), will terminate after current cmd ends
+2021-05-02T16:58:49.200-0500 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2021-05-02T16:58:49.200-0500 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-12008.sock
+2021-05-02T16:58:49.201-0500 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2021-05-02T16:58:49.206-0500 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2021-05-02T16:58:49.347-0500 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2021-05-02T16:58:49.349-0500 I CONTROL  [signalProcessingThread] now exiting
+2021-05-02T16:58:49.349-0500 I CONTROL  [signalProcessingThread] shutting down with code:0
+2021-05-02T16:59:28.840-0500 I CONTROL  [main] ***** SERVER RESTARTED *****
+2021-05-02T16:59:28.846-0500 I CONTROL  [initandlisten] MongoDB starting : pid=51613 port=12006 dbpath=./dbfile 64-bit host=ukko
+2021-05-02T16:59:28.846-0500 I CONTROL  [initandlisten] db version v3.6.9
+2021-05-02T16:59:28.846-0500 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2021-05-02T16:59:28.846-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2021-05-02T16:59:28.846-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-05-02T16:59:28.846-0500 I CONTROL  [initandlisten] modules: none
+2021-05-02T16:59:28.846-0500 I CONTROL  [initandlisten] build environment:
+2021-05-02T16:59:28.846-0500 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2021-05-02T16:59:28.846-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2021-05-02T16:59:28.846-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-05-02T16:59:28.846-0500 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 12006 }, storage: { dbPath: "./dbfile" }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2021-05-02T16:59:28.847-0500 E NETWORK  [initandlisten] Failed to unlink socket file /tmp/mongodb-12006.sock Operation not permitted
+2021-05-02T16:59:28.847-0500 F -        [initandlisten] Fatal Assertion 40486 at src/mongo/transport/transport_layer_asio.cpp 171
+2021-05-02T16:59:28.847-0500 F -        [initandlisten] 
+
+***aborting after fassert() failure
+
+
+2021-05-02T16:59:45.368-0500 I CONTROL  [main] ***** SERVER RESTARTED *****
+2021-05-02T16:59:45.376-0500 I CONTROL  [initandlisten] MongoDB starting : pid=51618 port=12009 dbpath=./dbfile 64-bit host=ukko
+2021-05-02T16:59:45.376-0500 I CONTROL  [initandlisten] db version v3.6.9
+2021-05-02T16:59:45.376-0500 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2021-05-02T16:59:45.376-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2021-05-02T16:59:45.376-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-05-02T16:59:45.376-0500 I CONTROL  [initandlisten] modules: none
+2021-05-02T16:59:45.376-0500 I CONTROL  [initandlisten] build environment:
+2021-05-02T16:59:45.376-0500 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2021-05-02T16:59:45.376-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2021-05-02T16:59:45.376-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-05-02T16:59:45.376-0500 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 12009 }, storage: { dbPath: "./dbfile" }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2021-05-02T16:59:45.377-0500 I -        [initandlisten] Detected data files in ./dbfile created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2021-05-02T16:59:45.378-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=257440M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2021-05-02T16:59:46.808-0500 I STORAGE  [initandlisten] WiredTiger message [1619992786:808797][51618:0x7f0fa23ef200], txn-recover: Main recovery loop: starting at 10/4992
+2021-05-02T16:59:47.011-0500 I STORAGE  [initandlisten] WiredTiger message [1619992787:10976][51618:0x7f0fa23ef200], txn-recover: Recovering log 10 through 11
+2021-05-02T16:59:47.134-0500 I STORAGE  [initandlisten] WiredTiger message [1619992787:134143][51618:0x7f0fa23ef200], txn-recover: Recovering log 11 through 11
+2021-05-02T16:59:47.215-0500 I STORAGE  [initandlisten] WiredTiger message [1619992787:215944][51618:0x7f0fa23ef200], txn-recover: Set global recovery timestamp: 0
+2021-05-02T16:59:47.255-0500 I CONTROL  [initandlisten] 
+2021-05-02T16:59:47.255-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2021-05-02T16:59:47.255-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2021-05-02T16:59:47.255-0500 I CONTROL  [initandlisten] 
+2021-05-02T16:59:47.257-0500 I CONTROL  [initandlisten] 
+2021-05-02T16:59:47.257-0500 I CONTROL  [initandlisten] ** WARNING: You are running on a NUMA machine.
+2021-05-02T16:59:47.257-0500 I CONTROL  [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2021-05-02T16:59:47.257-0500 I CONTROL  [initandlisten] **              numactl --interleave=all mongod [other options]
+2021-05-02T16:59:47.257-0500 I CONTROL  [initandlisten] 
+2021-05-02T16:59:47.274-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './dbfile/diagnostic.data'
+2021-05-02T16:59:47.275-0500 I NETWORK  [initandlisten] waiting for connections on port 12009
+2021-05-02T16:59:48.591-0500 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt), will terminate after current cmd ends
+2021-05-02T16:59:48.592-0500 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2021-05-02T16:59:48.592-0500 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-12009.sock
+2021-05-02T16:59:48.592-0500 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2021-05-02T16:59:48.597-0500 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2021-05-02T16:59:48.676-0500 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2021-05-02T16:59:48.678-0500 I CONTROL  [signalProcessingThread] now exiting
+2021-05-02T16:59:48.678-0500 I CONTROL  [signalProcessingThread] shutting down with code:0
+2021-05-02T16:59:57.235-0500 I CONTROL  [main] ***** SERVER RESTARTED *****
+2021-05-02T16:59:57.243-0500 I CONTROL  [initandlisten] MongoDB starting : pid=51650 port=12008 dbpath=./dbfile 64-bit host=ukko
+2021-05-02T16:59:57.243-0500 I CONTROL  [initandlisten] db version v3.6.9
+2021-05-02T16:59:57.243-0500 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2021-05-02T16:59:57.243-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2021-05-02T16:59:57.243-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-05-02T16:59:57.243-0500 I CONTROL  [initandlisten] modules: none
+2021-05-02T16:59:57.243-0500 I CONTROL  [initandlisten] build environment:
+2021-05-02T16:59:57.243-0500 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2021-05-02T16:59:57.243-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2021-05-02T16:59:57.243-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-05-02T16:59:57.243-0500 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 12008 }, storage: { dbPath: "./dbfile" }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2021-05-02T16:59:57.244-0500 E NETWORK  [initandlisten] Failed to unlink socket file /tmp/mongodb-12008.sock Operation not permitted
+2021-05-02T16:59:57.244-0500 F -        [initandlisten] Fatal Assertion 40486 at src/mongo/transport/transport_layer_asio.cpp 171
+2021-05-02T16:59:57.244-0500 F -        [initandlisten] 
+
+***aborting after fassert() failure
+
+
+2021-05-02T17:00:13.888-0500 I CONTROL  [main] ***** SERVER RESTARTED *****
+2021-05-02T17:00:13.896-0500 I CONTROL  [initandlisten] MongoDB starting : pid=51663 port=12009 dbpath=./dbfile 64-bit host=ukko
+2021-05-02T17:00:13.896-0500 I CONTROL  [initandlisten] db version v3.6.9
+2021-05-02T17:00:13.896-0500 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2021-05-02T17:00:13.896-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2021-05-02T17:00:13.896-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-05-02T17:00:13.896-0500 I CONTROL  [initandlisten] modules: none
+2021-05-02T17:00:13.896-0500 I CONTROL  [initandlisten] build environment:
+2021-05-02T17:00:13.896-0500 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2021-05-02T17:00:13.896-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2021-05-02T17:00:13.896-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-05-02T17:00:13.896-0500 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 12009 }, storage: { dbPath: "./dbfile" }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2021-05-02T17:00:13.898-0500 I -        [initandlisten] Detected data files in ./dbfile created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2021-05-02T17:00:13.898-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=257440M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2021-05-02T17:00:15.347-0500 I STORAGE  [initandlisten] WiredTiger message [1619992815:347711][51663:0x7f99ff6e9200], txn-recover: Main recovery loop: starting at 11/4992
+2021-05-02T17:00:15.571-0500 I STORAGE  [initandlisten] WiredTiger message [1619992815:571955][51663:0x7f99ff6e9200], txn-recover: Recovering log 11 through 12
+2021-05-02T17:00:15.716-0500 I STORAGE  [initandlisten] WiredTiger message [1619992815:715992][51663:0x7f99ff6e9200], txn-recover: Recovering log 12 through 12
+2021-05-02T17:00:15.784-0500 I STORAGE  [initandlisten] WiredTiger message [1619992815:784087][51663:0x7f99ff6e9200], txn-recover: Set global recovery timestamp: 0
+2021-05-02T17:00:15.832-0500 I CONTROL  [initandlisten] 
+2021-05-02T17:00:15.832-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2021-05-02T17:00:15.832-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2021-05-02T17:00:15.832-0500 I CONTROL  [initandlisten] 
+2021-05-02T17:00:15.833-0500 I CONTROL  [initandlisten] 
+2021-05-02T17:00:15.833-0500 I CONTROL  [initandlisten] ** WARNING: You are running on a NUMA machine.
+2021-05-02T17:00:15.833-0500 I CONTROL  [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2021-05-02T17:00:15.833-0500 I CONTROL  [initandlisten] **              numactl --interleave=all mongod [other options]
+2021-05-02T17:00:15.833-0500 I CONTROL  [initandlisten] 
+2021-05-02T17:00:15.853-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './dbfile/diagnostic.data'
+2021-05-02T17:00:15.854-0500 I NETWORK  [initandlisten] waiting for connections on port 12009
+2021-05-02T17:00:19.130-0500 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt), will terminate after current cmd ends
+2021-05-02T17:00:19.130-0500 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2021-05-02T17:00:19.130-0500 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-12009.sock
+2021-05-02T17:00:19.131-0500 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2021-05-02T17:00:19.137-0500 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2021-05-02T17:00:19.272-0500 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2021-05-02T17:00:19.273-0500 I CONTROL  [signalProcessingThread] now exiting
+2021-05-02T17:00:19.273-0500 I CONTROL  [signalProcessingThread] shutting down with code:0
+2021-05-02T17:00:37.215-0500 I CONTROL  [main] ***** SERVER RESTARTED *****
+2021-05-02T17:00:37.224-0500 I CONTROL  [initandlisten] MongoDB starting : pid=51693 port=12009 dbpath=./dbfile 64-bit host=ukko
+2021-05-02T17:00:37.224-0500 I CONTROL  [initandlisten] db version v3.6.9
+2021-05-02T17:00:37.224-0500 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2021-05-02T17:00:37.224-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2021-05-02T17:00:37.224-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-05-02T17:00:37.224-0500 I CONTROL  [initandlisten] modules: none
+2021-05-02T17:00:37.224-0500 I CONTROL  [initandlisten] build environment:
+2021-05-02T17:00:37.224-0500 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2021-05-02T17:00:37.224-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2021-05-02T17:00:37.224-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-05-02T17:00:37.224-0500 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 12009 }, storage: { dbPath: "./dbfile" }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2021-05-02T17:00:37.226-0500 I -        [initandlisten] Detected data files in ./dbfile created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2021-05-02T17:00:37.226-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=257440M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2021-05-02T17:00:39.233-0500 I STORAGE  [initandlisten] WiredTiger message [1619992839:233606][51693:0x7f02f3727200], txn-recover: Main recovery loop: starting at 12/4992
+2021-05-02T17:00:39.371-0500 I STORAGE  [initandlisten] WiredTiger message [1619992839:371779][51693:0x7f02f3727200], txn-recover: Recovering log 12 through 13
+2021-05-02T17:00:39.489-0500 I STORAGE  [initandlisten] WiredTiger message [1619992839:489123][51693:0x7f02f3727200], txn-recover: Recovering log 13 through 13
+2021-05-02T17:00:39.551-0500 I STORAGE  [initandlisten] WiredTiger message [1619992839:551517][51693:0x7f02f3727200], txn-recover: Set global recovery timestamp: 0
+2021-05-02T17:00:39.595-0500 I CONTROL  [initandlisten] 
+2021-05-02T17:00:39.595-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2021-05-02T17:00:39.595-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2021-05-02T17:00:39.595-0500 I CONTROL  [initandlisten] 
+2021-05-02T17:00:39.597-0500 I CONTROL  [initandlisten] 
+2021-05-02T17:00:39.597-0500 I CONTROL  [initandlisten] ** WARNING: You are running on a NUMA machine.
+2021-05-02T17:00:39.597-0500 I CONTROL  [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2021-05-02T17:00:39.597-0500 I CONTROL  [initandlisten] **              numactl --interleave=all mongod [other options]
+2021-05-02T17:00:39.597-0500 I CONTROL  [initandlisten] 
+2021-05-02T17:00:39.616-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './dbfile/diagnostic.data'
+2021-05-02T17:00:39.617-0500 I NETWORK  [initandlisten] waiting for connections on port 12009
+2021-05-02T17:01:05.127-0500 I NETWORK  [listener] connection accepted from 131.212.41.69:36796 #1 (1 connection now open)
+2021-05-02T17:01:05.146-0500 I NETWORK  [conn1] received client metadata from 131.212.41.69:36796 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-128-generic" }, platform: "Node.js v8.10.0, LE, mongodb-core: 2.1.20" }
+2021-05-02T17:01:06.812-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Amber" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:92 reslen:7732 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 112ms
+2021-05-02T17:01:08.307-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Conley" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:20 reslen:1756 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 113ms
+2021-05-02T17:01:14.669-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Olivia" }, $db: "finalProject" } planSummary: COLLSCAN cursorid:17647756094 keysExamined:0 docsExamined:229235 numYields:1790 nreturned:101 reslen:8581 locks:{ Global: { acquireCount: { r: 3582 } }, Database: { acquireCount: { r: 1791 } }, Collection: { acquireCount: { r: 1791 } } } protocol:op_query 101ms
+2021-05-02T17:01:17.431-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Ester" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:91 reslen:7644 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 147ms
+2021-05-02T17:01:21.136-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Gracelyn" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:5 reslen:531 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 110ms
+2021-05-02T17:01:25.032-0500 I NETWORK  [listener] connection accepted from 131.212.41.69:36798 #2 (2 connections now open)
+2021-05-02T17:03:56.670-0500 I NETWORK  [conn2] end connection 131.212.41.69:36798 (1 connection now open)
+2021-05-02T17:03:56.670-0500 I NETWORK  [conn1] end connection 131.212.41.69:36796 (0 connections now open)
+2021-05-02T17:04:00.477-0500 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt), will terminate after current cmd ends
+2021-05-02T17:04:00.477-0500 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2021-05-02T17:04:00.477-0500 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-12009.sock
+2021-05-02T17:04:00.477-0500 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2021-05-02T17:04:00.488-0500 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2021-05-02T17:04:00.559-0500 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2021-05-02T17:04:00.560-0500 I CONTROL  [signalProcessingThread] now exiting
+2021-05-02T17:04:00.560-0500 I CONTROL  [signalProcessingThread] shutting down with code:0
+2021-05-02T17:12:28.140-0500 I CONTROL  [main] ***** SERVER RESTARTED *****
+2021-05-02T17:12:28.147-0500 I CONTROL  [initandlisten] MongoDB starting : pid=52063 port=12009 dbpath=./dbfile 64-bit host=ukko
+2021-05-02T17:12:28.147-0500 I CONTROL  [initandlisten] db version v3.6.9
+2021-05-02T17:12:28.147-0500 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2021-05-02T17:12:28.147-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2021-05-02T17:12:28.147-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-05-02T17:12:28.147-0500 I CONTROL  [initandlisten] modules: none
+2021-05-02T17:12:28.147-0500 I CONTROL  [initandlisten] build environment:
+2021-05-02T17:12:28.147-0500 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2021-05-02T17:12:28.147-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2021-05-02T17:12:28.147-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-05-02T17:12:28.147-0500 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 12009 }, storage: { dbPath: "./dbfile" }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2021-05-02T17:12:28.149-0500 I -        [initandlisten] Detected data files in ./dbfile created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2021-05-02T17:12:28.150-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=257440M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2021-05-02T17:12:29.837-0500 I STORAGE  [initandlisten] WiredTiger message [1619993549:837414][52063:0x7f8eb0814200], txn-recover: Main recovery loop: starting at 13/6912
+2021-05-02T17:12:30.056-0500 I STORAGE  [initandlisten] WiredTiger message [1619993550:56188][52063:0x7f8eb0814200], txn-recover: Recovering log 13 through 14
+2021-05-02T17:12:30.201-0500 I STORAGE  [initandlisten] WiredTiger message [1619993550:201571][52063:0x7f8eb0814200], txn-recover: Recovering log 14 through 14
+2021-05-02T17:12:30.271-0500 I STORAGE  [initandlisten] WiredTiger message [1619993550:271002][52063:0x7f8eb0814200], txn-recover: Set global recovery timestamp: 0
+2021-05-02T17:12:30.311-0500 I CONTROL  [initandlisten] 
+2021-05-02T17:12:30.311-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2021-05-02T17:12:30.311-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2021-05-02T17:12:30.311-0500 I CONTROL  [initandlisten] 
+2021-05-02T17:12:30.312-0500 I CONTROL  [initandlisten] 
+2021-05-02T17:12:30.312-0500 I CONTROL  [initandlisten] ** WARNING: You are running on a NUMA machine.
+2021-05-02T17:12:30.312-0500 I CONTROL  [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2021-05-02T17:12:30.312-0500 I CONTROL  [initandlisten] **              numactl --interleave=all mongod [other options]
+2021-05-02T17:12:30.312-0500 I CONTROL  [initandlisten] 
+2021-05-02T17:12:30.331-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './dbfile/diagnostic.data'
+2021-05-02T17:12:30.331-0500 I NETWORK  [initandlisten] waiting for connections on port 12009
+2021-05-02T17:12:42.602-0500 I NETWORK  [listener] connection accepted from 131.212.41.69:36800 #1 (1 connection now open)
+2021-05-02T17:12:42.619-0500 I NETWORK  [conn1] received client metadata from 131.212.41.69:36800 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-128-generic" }, platform: "Node.js v8.10.0, LE, mongodb-core: 2.1.20" }
+2021-05-02T17:12:43.253-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Olin" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:83 reslen:6819 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 111ms
+2021-05-02T17:12:59.549-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Rosemarie" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:80 reslen:7056 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 121ms
+2021-05-02T17:13:29.504-0500 I NETWORK  [conn1] end connection 131.212.41.69:36800 (0 connections now open)
+2021-05-02T17:13:33.010-0500 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt), will terminate after current cmd ends
+2021-05-02T17:13:33.010-0500 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2021-05-02T17:13:33.010-0500 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-12009.sock
+2021-05-02T17:13:33.011-0500 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2021-05-02T17:13:33.019-0500 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2021-05-02T17:13:33.130-0500 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2021-05-02T17:13:33.132-0500 I CONTROL  [signalProcessingThread] now exiting
+2021-05-02T17:13:33.132-0500 I CONTROL  [signalProcessingThread] shutting down with code:0
+2021-05-06T13:50:13.255-0500 I CONTROL  [main] ***** SERVER RESTARTED *****
+2021-05-06T13:50:13.263-0500 I CONTROL  [initandlisten] MongoDB starting : pid=25052 port=12009 dbpath=./dbfile 64-bit host=ukko
+2021-05-06T13:50:13.263-0500 I CONTROL  [initandlisten] db version v3.6.9
+2021-05-06T13:50:13.263-0500 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2021-05-06T13:50:13.263-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2021-05-06T13:50:13.263-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-05-06T13:50:13.263-0500 I CONTROL  [initandlisten] modules: none
+2021-05-06T13:50:13.263-0500 I CONTROL  [initandlisten] build environment:
+2021-05-06T13:50:13.263-0500 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2021-05-06T13:50:13.263-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2021-05-06T13:50:13.263-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-05-06T13:50:13.263-0500 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 12009 }, storage: { dbPath: "./dbfile" }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2021-05-06T13:50:13.267-0500 I -        [initandlisten] Detected data files in ./dbfile created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2021-05-06T13:50:13.270-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=257440M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2021-05-06T13:50:14.757-0500 I STORAGE  [initandlisten] WiredTiger message [1620327014:757126][25052:0x7fef1f4a0200], txn-recover: Main recovery loop: starting at 14/6656
+2021-05-06T13:50:14.890-0500 I STORAGE  [initandlisten] WiredTiger message [1620327014:890138][25052:0x7fef1f4a0200], txn-recover: Recovering log 14 through 15
+2021-05-06T13:50:14.978-0500 I STORAGE  [initandlisten] WiredTiger message [1620327014:978287][25052:0x7fef1f4a0200], txn-recover: Recovering log 15 through 15
+2021-05-06T13:50:15.032-0500 I STORAGE  [initandlisten] WiredTiger message [1620327015:32234][25052:0x7fef1f4a0200], txn-recover: Set global recovery timestamp: 0
+2021-05-06T13:50:15.074-0500 I CONTROL  [initandlisten] 
+2021-05-06T13:50:15.074-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2021-05-06T13:50:15.074-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2021-05-06T13:50:15.074-0500 I CONTROL  [initandlisten] 
+2021-05-06T13:50:15.075-0500 I CONTROL  [initandlisten] 
+2021-05-06T13:50:15.075-0500 I CONTROL  [initandlisten] ** WARNING: You are running on a NUMA machine.
+2021-05-06T13:50:15.075-0500 I CONTROL  [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2021-05-06T13:50:15.075-0500 I CONTROL  [initandlisten] **              numactl --interleave=all mongod [other options]
+2021-05-06T13:50:15.075-0500 I CONTROL  [initandlisten] 
+2021-05-06T13:50:15.090-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './dbfile/diagnostic.data'
+2021-05-06T13:50:15.090-0500 I NETWORK  [initandlisten] waiting for connections on port 12009
+2021-05-06T13:50:36.680-0500 I NETWORK  [listener] connection accepted from 131.212.41.69:37594 #1 (1 connection now open)
+2021-05-06T13:50:36.699-0500 I NETWORK  [conn1] received client metadata from 131.212.41.69:37594 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-128-generic" }, platform: "Node.js v8.10.0, LE, mongodb-core: 2.1.20" }
+2021-05-06T13:50:49.063-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Sheryl" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:52 reslen:4464 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 114ms
+2021-05-06T13:50:51.522-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Jeanne" }, $db: "finalProject" } planSummary: COLLSCAN cursorid:21155320354 keysExamined:0 docsExamined:229481 numYields:1792 nreturned:101 reslen:8581 locks:{ Global: { acquireCount: { r: 3586 } }, Database: { acquireCount: { r: 1793 } }, Collection: { acquireCount: { r: 1793 } } } protocol:op_query 100ms
+2021-05-06T13:51:42.485-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Mintie" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:15 reslen:1356 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 120ms
+2021-05-06T13:51:44.643-0500 I COMMAND  [conn1] command finalProject.names command: getMore { getMore: 19505560920, collection: "names", batchSize: 1000, $readPreference: { mode: "secondaryPreferred" }, $db: "finalProject" } originatingCommand: { find: "names", filter: { name: "Lewis" }, $db: "finalProject" } planSummary: COLLSCAN cursorid:19505560920 keysExamined:0 docsExamined:157695 cursorExhausted:1 numYields:1232 nreturned:28 reslen:2391 locks:{ Global: { acquireCount: { r: 2466 } }, Database: { acquireCount: { r: 1233 } }, Collection: { acquireCount: { r: 1233 } } } protocol:op_query 104ms
+2021-05-06T13:51:51.743-0500 I NETWORK  [listener] connection accepted from 131.212.41.69:37596 #2 (2 connections now open)
+2021-05-06T13:51:51.930-0500 I COMMAND  [conn2] command finalProject.names command: find { find: "names", filter: { name: "Chandler" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:42 reslen:3677 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 109ms
+2021-05-06T13:58:00.394-0500 I COMMAND  [conn2] command finalProject.names command: find { find: "names", filter: { name: "Octavia" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:82 reslen:7066 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 108ms
+2021-05-06T13:58:01.930-0500 I COMMAND  [conn2] command finalProject.names command: find { find: "names", filter: { name: "Marilynn" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:42 reslen:3708 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 106ms
+2021-05-06T14:08:05.006-0500 I COMMAND  [conn2] command finalProject.names command: find { find: "names", filter: { name: "Allene" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:66 reslen:5640 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 108ms
+2021-05-06T14:08:28.111-0500 I COMMAND  [conn2] command finalProject.names command: find { find: "names", filter: { name: "Sal" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:24 reslen:2016 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 131ms
+2021-05-06T14:08:31.643-0500 I COMMAND  [conn2] command finalProject.names command: getMore { getMore: 21287509403, collection: "names", batchSize: 1000, $readPreference: { mode: "secondaryPreferred" }, $db: "finalProject" } originatingCommand: { find: "names", filter: { name: "Alberto" }, $db: "finalProject" } planSummary: COLLSCAN cursorid:21287509403 keysExamined:0 docsExamined:145775 cursorExhausted:1 numYields:1138 nreturned:16 reslen:1439 locks:{ Global: { acquireCount: { r: 2278 } }, Database: { acquireCount: { r: 1139 } }, Collection: { acquireCount: { r: 1139 } } } protocol:op_query 112ms
+2021-05-06T14:08:34.256-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Damion" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:40 reslen:3416 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 206ms
+2021-05-06T14:08:35.501-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Zella" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:71 reslen:5989 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 109ms
+2021-05-06T14:08:42.729-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Yvette" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:95 reslen:8076 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 209ms
+2021-05-06T14:08:42.982-0500 I COMMAND  [conn2] command finalProject.names command: find { find: "names", filter: { name: "Danielle" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:72 reslen:6285 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 218ms
+2021-05-06T14:11:27.827-0500 I COMMAND  [conn2] command finalProject.names command: find { find: "names", filter: { name: "Emory" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:94 reslen:7804 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 122ms
+2021-05-06T14:11:54.249-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Celestine" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:83 reslen:7317 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 115ms
+2021-05-06T14:11:58.269-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Janelle" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:78 reslen:6726 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 112ms
+2021-05-06T14:13:15.813-0500 I COMMAND  [conn2] command finalProject.names command: find { find: "names", filter: { name: "Aloysius" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:61 reslen:5281 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 108ms
+2021-05-06T14:13:19.901-0500 I COMMAND  [conn2] command finalProject.names command: find { find: "names", filter: { name: "Artis" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:61 reslen:5098 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 106ms
+2021-05-06T14:13:31.862-0500 I COMMAND  [conn2] command finalProject.names command: find { find: "names", filter: { name: "Kelvin" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:59 reslen:4993 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 110ms
+2021-05-06T14:13:35.292-0500 I COMMAND  [conn2] command finalProject.names command: find { find: "names", filter: { name: "Granville" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:73 reslen:6374 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 111ms
+2021-05-06T14:13:41.868-0500 I COMMAND  [conn2] command finalProject.names command: find { find: "names", filter: { name: "Raleigh" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:84 reslen:7152 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 106ms
+2021-05-06T14:13:43.685-0500 I COMMAND  [conn2] command finalProject.names command: find { find: "names", filter: { name: "Damion" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:40 reslen:3416 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 172ms
+2021-05-06T14:13:48.488-0500 I COMMAND  [conn1] command finalProject.names command: find { find: "names", filter: { name: "Estefania" }, $db: "finalProject" } planSummary: COLLSCAN keysExamined:0 docsExamined:258000 cursorExhausted:1 numYields:2015 nreturned:12 reslen:1140 locks:{ Global: { acquireCount: { r: 4032 } }, Database: { acquireCount: { r: 2016 } }, Collection: { acquireCount: { r: 2016 } } } protocol:op_query 115ms
+2021-05-06T14:15:04.997-0500 I NETWORK  [conn1] end connection 131.212.41.69:37594 (0 connections now open)
+2021-05-06T14:15:04.997-0500 I NETWORK  [conn2] end connection 131.212.41.69:37596 (1 connection now open)
+2021-05-06T14:15:07.997-0500 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt), will terminate after current cmd ends
+2021-05-06T14:15:07.997-0500 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2021-05-06T14:15:07.997-0500 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-12009.sock
+2021-05-06T14:15:07.997-0500 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2021-05-06T14:15:08.011-0500 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2021-05-06T14:15:08.105-0500 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2021-05-06T14:15:08.106-0500 I CONTROL  [signalProcessingThread] now exiting
+2021-05-06T14:15:08.107-0500 I CONTROL  [signalProcessingThread] shutting down with code:0

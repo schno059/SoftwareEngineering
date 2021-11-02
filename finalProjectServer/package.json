@@ -1,0 +1,38 @@
+{
+  "name": "umdaliveserver",
+  "version": "1.0.0",
+  "description": "server to run umd alive app",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "forever": "^0.15.3",
+    "google-auth-library": "^1.4.0",
+    "mongodb": "^2.2.11",
+    "mongojs": "^2.4.1",
+    "mongoose": "^5.12.3",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "module-js": "^5.15.0",
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "bootServer": "mongod --config mongod.conf & nodejs index.js",
+    "prestart": "mongod --config mongod.conf &",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "forever start -al forever.log -o forever_output.log -e forever_error.log index.js",
+    "stop": "forever stop index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.umn.edu:cs4531/umdalive.git"
+  },
+  "keywords": [
+    "umdalive"
+  ],
+  "author": "Kevin S",
+  "license": "ISC"
+}
