@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="options_array">
+        <item>Current Image</item>
+        <item>Wagon</item>
+        <item>Duluth</item>
+        <item>Maryland</item>
+        <item>Bulldog 1</item>
+        <item>Bulldog 2</item>
+        <item>Bulldog 3</item>
+        <item>Pencil</item>
+        <item>Textbook</item>
+        <item>Notebook</item>
+        <item>Professor</item>
+        <item>Earth</item>
+        <item>Tree</item>
+        <item>Rainbow</item>
+        <item>Computer</item>
+        <item>Hacker Man</item>
+        <item>Hacker Woman</item>
+        <item>Mr.Electric</item>
+        <item>Bridge</item>
+        <item>Gear</item>
+        <item>Black Hole</item>
+        <item>Chemical</item>
+        <item>DNA</item>
+        <item>MRI</item>
+        <item>Socrates</item>
+    </string-array>
+    <string-array name="url_array">
+        <item></item>
+        <item>https://images.homedepot-static.com/productImages/42613c1a-7427-4557-ada8-ba2a17cca381/svn/gorilla-carts-yard-carts-gormp-12-64_1000.jpg</item>
+        <item>https://d3hk6w1rfu80ox.cloudfront.net/media/uploads/listings/LQiKa2uancMD.jpg</item>
+        <item>https://www.bsfa.org/wp-content/uploads/2016/10/UMD-logo-660x990.jpg</item>
+        <item>https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/11234019/Bulldog-standing-in-the-grass.jpg</item>
+        <item>https://nationaltoday.com/wp-content/uploads/2020/04/national-bulldogs-are-beautiful-day.jpg</item>
+        <item>https://i.pinimg.com/originals/68/22/3c/68223cbc8a5cc3d933131c4451d8c413.jpg</item>
+        <item>https://cdn11.bigcommerce.com/s-iem2p/images/stencil/original/products/11611/40433/giant-pencil__30330.1535738765.jpg?c=2</item>
+        <item>https://cdn.kqed.org/wp-content/uploads/sites/23/2012/01/4235591661_7de977b8cf_z.jpg</item>
+        <item>https://images-na.ssl-images-amazon.com/images/I/71fetydzOVL._AC_SL1500_.jpg</item>
+        <item>https://media.istockphoto.com/photos/crazy-angry-professor-yelling-and-pointing-with-a-stick-picture-id1083619800?k=6&amp;m=1083619800&amp;s=612x612&amp;w=0&amp;h=RH0B3TfFN90k98bxvlqOUIyoe4wq1rvgZimKCiav_00=</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/1200px-The_Earth_seen_from_Apollo_17.jpg</item>
+        <item>https://www.sciencenewsforstudents.org/wp-content/uploads/2020/04/1030_LL_trees.png</item>
+        <item>https://www.sciencenewsforstudents.org/wp-content/uploads/2020/04/1030_fogbow_explainer-1028x579.png</item>
+        <item>https://economictimes.indiatimes.com/thumb/msid-75719903,width-1200,height-900,resizemode-4,imgsize-290552/8.jpg?from=mdr</item>
+        <item>https://cdn.costumewall.com/wp-content/uploads/2017/08/hackerman.jpg</item>
+        <item>https://st3.depositphotos.com/1181187/16833/i/1600/depositphotos_168337846-stock-photo-woman-hacker-holding-knofe-at.jpg</item>
+        <item>https://static.wikia.nocookie.net/theadventuresofsharkboyandlavagirl/images/5/5b/Mr._Electric.png/revision/latest?cb=20200731160052</item>
+        <item>https://dpv85fgkqesen.cloudfront.net/sites/default/files/styles/large_horizontal/public/2018-06/Fairfax_Bridge_crop_0.jpg?itok=eOtQVg9z</item>
+        <item>https://image.freepik.com/free-vector/3d-cog-gears-wheel-concept-background_1017-28427.jpg</item>
+        <item>https://images.theconversation.com/files/391881/original/file-20210326-15-1pkaows.jpg?ixlib=rb-1.1.0&amp;rect=0%2C5%2C3414%2C3403&amp;q=45&amp;auto=format&amp;w=926&amp;fit=clip</item>
+        <item>https://www.minerals-water.co.uk/listing/templates/photos/res_4077c222326f4263afc566b6fffb09a4.jpg</item>
+        <item>https://as1.ftcdn.net/jpg/01/59/41/70/500_F_159417032_t6xLW5I0ntYPhsuniQVY4vEY4CmyfiTO.jpg</item>
+        <item>https://www.brainfacts.org/-/media/Brainfacts2/In-the-Lab/Tools-and-Techniques/Article-Images/MRI_blackandwhite.png</item>
+        <item>https://sites.google.com/site/domshistoryblog/_/rsrc/1470267637378/ancient-greek-personality/socrates.jpg</item>
+    </string-array>
+</resources>
